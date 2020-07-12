@@ -1,0 +1,58 @@
+body {
+
+    background: url("file:///C:/Users/akash/Downloads/gradienta-LeG68PrXA6Y-unsplash.jpg");
+}
+h1:hover{
+    color: skyblue;
+}
+.title {
+    color: orange;
+    text-align: center;
+    
+}
+#lang{
+    color: rgb(243, 235, 234);
+}
+ul{
+    font-size: 43;
+}
+/* li:only-child{                  when list have only one child 
+    color: slateblue;
+} */ 
+/* li:first-child{ */
+    /* color: red;                  it'll be applied on every first child of the list */
+/* } */
+li:nth-child(3) {
+    color: royalblue;
+}
+/* #google-link:link{
+    color: orchid;
+}
+#google-link:visited{
+    color: aqua;
+} */
+h1 + p {
+    color: crimson;    /* When  these both are following each other then the styling will det apply on p*/
+}  
+
+textarea ~ button{
+    color: darkmagenta;  /*when the these two tage are in this sequence and are under the same parents then styling will get applies 
+                            on button*/
+}
+ol > li {
+    color: grey;
+}
+
+ul li {
+    color: magenta;    
+}
+
+img[src^="../Html/"]{
+    border: 20px solid rgb(236, 124, 59);    /* when we use src^=path then it will look for img tag with starting with this path and 
+                                                when we use src$= then it will check for img tag ends with that path*/
+    
+}   
+h1[class|=new-class]{
+    background: grey;
+}
+
