@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,500;1,500&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../CSS/style.css">
         <title>
             new start
@@ -12,11 +13,14 @@
         </h1>
             <p>
                <strong> this is basic revision of html css.</strong> <em> wanna learn it again because I wanna know how websites are build in these languages </em>
+               next I gonna build a small project using html and css. and then once my basics get clear then I'll build a full fledged website.
+               I' will build it by my own. I'll make that website world wide accesseble by the help of my friend.
             </p>
             <div>
                 <a href="https://www.google.com/" id="google-link" target="_blank">click here</a>
             </div>
-        <table border="3"> 
+        <div id="color-testing"></div>
+        <table id="table"> 
             <thead>
                 <tr>
                     <td>sno.</td> <td> name </td> <td> rollno.</td>
@@ -34,7 +38,7 @@
                 </tr>
             </tbody>
         </table>
-        <img src="../Html/baby_lol.png">
+        <img src="../Html/baby_lol.png" class="image" id="baby_lol">
         <br>
         <h1 class="title" id="lang">languages to learn</h1>
         <ul>
@@ -61,7 +65,63 @@
         <ul>
             <li>testing</li>
         </ul>
-        <div>
+        <div class="container">
+            <div class="container-item" style="order: 6;
+            flex:  1 6 12px">A</div>
+            <div class="container-item" style="order: 1;
+            flex-grow: 3;
+            flex-shrink: 2;
+            flex-basis: 100px;
+            align-self: ;">B</div>
+            <div class="container-item" style="order: 2;
+            flex-grow: 1;
+            flex-shrink: 3;
+            flex-basis: 100px;
+            align-self: flex-end;">C</div>
+            <div class="container-item" style="order: 4;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            align-self: flex-start;">D</div>
+            <div class="container-item" style="order: 3;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            align-self: flex-top;">E</div>
+            <div class="container-item" style="order: 5;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            align-self: center;">F</div>
+            <!-- <div class="container-item">G</div>
+            <div class="container-item">H</div>
+            <div class="container-item">I</div>
+            <div class="container-item">J</div>
+            <div class="container-item">K</div>   
+            <div class="container-item">L</div>   
+            <div class="container-item">M</div>   
+            <div class="container-item">N</div>   
+            <div class="container-item">O</div>   
+            <div class="container-item">P</div>   
+            <div class="container-item">P</div>   
+            <div class="container-item">Q</div>
+            <div class="container-item">R</div>
+            <div class="container-item">S</div> -->
+        </div>
+        <br>
+        <div class="grid-container">
+            <div class="grid-item" style="background: magenta;
+            ">1</div>
+            <div class="grid-item" style="background: rgb(0, 247, 255);
+            ">2</div>
+            <div class="grid-item" style="background: rgb(231, 128, 10);
+            ">3</div>
+            <div class="grid-item" style="background: rgb(18, 221, 79);
+            ">4</div>
+            <div class="grid-item" style="background: rgb(162, 0, 255);
+            ">5</div>
+        </div>
+        <div id="service-pics">
         <form>
             <input type="text" placeholder="Full Name"> <br>
             <input type="Email" placeholder="Email"> <br>
@@ -69,6 +129,6 @@
             <button>Submit</button>
         </form>
         </div>
-        <img src="../Html/s.png">
+        <img src="../Html/s.png" class="image">
     </body>
 </html>
