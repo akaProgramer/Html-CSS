@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    font-family: 'Arimo', sans-serif;
+}
+body{
+    font-family: 'Arimo', sans-serif;
+}
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+}
+.logo-container,.nav-links,.cart{
+    display: flex;
+}
+
+.logo{
+    font-weight: 400;
+    margin: 5px;
+}
+nav{
+    
+    flex: 2;
+}
+.logo-container{
+
+    flex: 1;
+}
+.cart{
+
+    flex: 1;
+    justify-content: flex-end;
+}
+.nav-links{
+    justify-content: space-around;
+}
+ul{
+    list-style-type: none;
+}
+.nav-link{
+    color: rgb(189, 36, 189);
+    font-size: 21px;
+    text-decoration: none;
+
+}
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.cover img{
+    height: 60vh;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+
+}
+.intro-text h1{
+    font-size: 30px;
+    font-weight: 500px;
+    background: linear-gradient(to right, rgb(31, 8, 31),rgb(192, 130, 192));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.introduction{
+
+    flex: 1;
+}
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+.cta-select{
+    border: 2px solid rgb(184, 61, 167);
+    background: transparent;
+    color: rgb(184, 61, 167);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;   
+    font-family: 'Arimo', sans-serif; 
+    font-size: 15px;
+}
+.cta-add{
+    border: 2px solid rgb(184, 61, 167);
+    background: rgb(184, 61, 167);
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;   
+    font-family: 'Arimo', sans-serif; 
+    font-size: 15px;   
+    margin: 30px 0px 0px 30px; 
+
+}
+.intro-text p{
+    margin: 5px;
+    color: rgb(134, 32, 165);
+    font-size: 22px;
+}
+.big-circle{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.5;
+    height: 80%;
+}
+.mid-circle{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.4;
+    height: 60%;
+
+}
+.small-circle{
+    position: absolute;
+    bottom: 0%;
+    left: 30%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+.laptop-select{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 20%;
+}
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
