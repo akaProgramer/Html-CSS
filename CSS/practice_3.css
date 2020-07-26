@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background: black;
+}
 header{
     width: 92%;
     margin: 10px 30px 30px 0px;
@@ -31,23 +34,28 @@ img{
 .nav-bar{
     margin: 30px;
 }
+a{
+    margin: 10px;
+}
 .navbar-link{
     margin: 10px,10px;
+    background: white;
     padding: 10px;
     text-decoration: none;
     font-size: 20px;
     text-transform: uppercase;
-    color: grey;
+    color: black;
+    border: 1px solid white;
     font-weight: 600;
     transition: 0.37s ease;
 }
 .navbar-link:hover {
     border-top: 3px solid green;
-    filter: drop-shadow(1px 0px 1px rgb(97, 93, 93));
+    filter: drop-shadow(1px 0px 1px rgb(255, 252, 252));
     cursor: pointer;
 }
 main{
-    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.322),rgba(230, 222, 222, 0.322) ), url(../Images/IMG_4600.JPG);
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.075),rgba(230, 222, 222, 0.24) ), url(../Images/IMG_4600.JPG);
     height: 100vh;
     background-position: center;
     background-size: cover;
