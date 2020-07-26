@@ -1,0 +1,25 @@
+body{
+    background: url(../Images/pic1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width: 20%;
+    height: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.nav-bar{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+    
+
+}
+a{
+    text-decoration: none;
+}
