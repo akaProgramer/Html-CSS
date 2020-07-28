@@ -4,7 +4,7 @@
 }
 body{
     background: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.514)) ,url(../Images/pic1.jpg);
-    height: 100vh;
+    height: 100vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

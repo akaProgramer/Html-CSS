@@ -6,6 +6,7 @@ body{
     background: black;
 }
 header{
+    
     width: 92%;
     margin: 10px 30px 30px 0px;
     height: 10vh;
@@ -14,10 +15,12 @@ header{
 .header-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    
 }
 .nav-bar,.logo{
     display: flex;
+    flex-wrap: nowrap;
 }
 img{
     width: 50%;
