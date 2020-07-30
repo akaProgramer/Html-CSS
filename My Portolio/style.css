@@ -1,0 +1,96 @@
+body{
+    background: linear-gradient(to left, #434343 0%, black 100%);
+    background: url("../Images/IMG_4600.JPG");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    /* background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%); */
+}
+header{
+    height: 20vh;
+    width: 95%;
+    background: rgba(255, 255, 255, 0.664);
+    margin: 30px 30px;
+    display: flex;
+}
+
+.heading{
+    /* background-color: pink; */
+    flex: 1;
+    text-align: center;
+    margin-left: 45px;
+}
+.main-heading{
+    font-size: 4em;
+    font-weight: 800;
+    font-family: 'Merienda One', cursive;
+    margin: 30px;
+    text-decoration: underline;
+    background: -webkit-linear-gradient(rgba(230, 255, 4, 0.74),rgba(255, 0, 221, 0.733));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logo{
+    /* background-color: lawngreen; */
+    height: 100%;
+    flex: 0.5;    
+    
+}
+
+
+.logo > img{
+    height: 9em;
+    width: 90%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.nav-links{
+    /* background-color: burlywood; */
+    flex: 2;
+}
+.nav-links > ul{
+    display: flex;
+    list-style-type: none;
+    margin: 60px 10px;
+    justify-content: space-around;
+}
+li > a{
+    text-decoration: none;
+    color: orange ;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 10px 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: azure;
+    border-radius: 10%;
+    
+}
+li > a:hover{
+    box-shadow: 0 0 10px whitesmoke, 0 0 40px whitesmoke, 0 0 80px whitesmoke;
+
+} 
+main{
+    background: rgba(255, 255, 255, 0.726);
+    width: 95%;
+    height: 50vh;
+    margin: 10px 30px;
+    display: flex;
+}
+.label{
+    /* background: beige; */
+    height: 100%;
+    flex: 2;
+    text-align: center;
+    font-size: 2em; 
+    font-family: 'Righteous', cursive;
+}
+.my-image-section{
+    /* background: chartreuse; */
+    height: 100%;
+    flex: 1;
+}
+#my-image{
+    width: 50%;
+    height: 60%;
+    filter: drop-shadow(1px 5px 35px rgba(22, 20, 16, 0.74));
+
+}
