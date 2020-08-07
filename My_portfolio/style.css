@@ -5,7 +5,7 @@
 }
 
 body{
-    /* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); */
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -13,6 +13,7 @@ body{
 }
 header{
     height: 20vh;
+    border-radius: 8px;
     width: 95%;
     background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
     margin: 30px 30px;
@@ -28,14 +29,12 @@ header{
     filter: drop-shadow(10px 5px 2px rgb(250, 142, 2));  
     
 }
-.logo:hover{
+.logo>img:hover{
     cursor: pointer;
-    
 }
 
-.logo > img{
-    height: 150px;
-    width: 90%;
+.logo>img{
+    height: 100%;
     margin-bottom: 30px;
     margin-left: 20px;
 }
@@ -47,8 +46,9 @@ header{
 .nav-links > ul{
     display: flex;
     list-style-type: none;
-    margin: 60px 10px;
-    justify-content: space-around;
+    margin-top: 40px;
+    padding: 10px;
+    /* justify-content: space-around; */
     flex-wrap: wrap;
 }
 li > a{
@@ -56,11 +56,10 @@ li > a{
     color: orange ;
     font-weight: 800;
     font-size: 20px;
-    padding: 10px 25px;
+    padding: 10px 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: azure;
-    border-radius: 10%;
-    flex-shrink: 3;
+    border-radius: 5px;
     
 }
 li > a:hover{
@@ -70,28 +69,26 @@ li > a:hover{
 
 .heading{
     /* background-color: pink; */
-    flex: 1;
+    width: 100%;
     text-align: center;
     margin-left: 45px;
 }
 .main-heading{
-    font-size: 55px;
+    font-size: 5rem;
+    border-bottom: 4px solid rgb(112, 17, 175);
     font-weight: 800;
     font-family: 'Merienda One', cursive;
     margin: 30px;
     text-decoration: underline;
-    background: -webkit-linear-gradient(rgba(230, 255, 4, 0.74),rgba(255, 0, 221, 0.733));
+    background: -webkit-linear-gradient(rgba(230, 255, 4, 0.74),rgba(255, 0, 221, 0.753));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 main{
+    border-radius: 8px;
     background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
     width: 95%;
-    height: 40vh;
+    height: 100%;
     margin: 10px 30px;
     display: flex;
     flex-wrap: wrap;
@@ -106,48 +103,49 @@ main{
 }    
 .intro{
     padding: 10px;
-    font-size: 60px; 
+    font-size: 2.5rem; 
     font-family: 'Righteous', cursive;
     letter-spacing: 5px;
     color: rgb(0, 109, 252);
-    filter: drop-shadow(2px 2px 4px rgb(9, 150, 245));
+    /* filter: drop-shadow(2px 2px 4px rgb(9, 150, 245)); */
 }
 
 
-.label> p{
+.label>p{
     margin: 40px;
-    font-size: 30px;
+    font-size: 1.3rem;
     font-weight: 600;
-    color: rgb(255, 4, 79);
-    filter: drop-shadow(2px 2px 4px rgb(245, 9, 9)); 
+    color: rgb(255, 104, 4);
+    /* filter: drop-shadow(2px 2px 4px rgb(245, 9, 9));  */
 }
 .my-image-section{
     /* background: chartreuse; */
     height: 80%;
-    flex: 1;
+    /* flex: 1; */
 }
 .my-image{
-    width: 70%;
-    height: 90%;
-    filter: drop-shadow(3px 20px 20px rgb(255, 129, 45));
+    border-radius: 80px;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(3px 20px 20px rgb(131, 124, 117));
 
 }
 #about-me{
-    margin: 30px 20px 50px;
+    margin: 100px 20px 50px;
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.about-me-image > img{
+.about-me-image>img{
     /* background: chocolate; */
     height: 100%;
-
+    border-radius: 10px;
 }
 .about-me-text{
     /* background: cornflowerblue; */
     flex: 1;
-    margin: 20px 90px;
+    margin: 20px 120px;
 }
 .heading-about-me{
     font-size: 50px;
@@ -164,22 +162,23 @@ main{
 }
 #contact-me{
     /* background-color: cornflowerblue; */
-    margin: 30px 20px 50px;
+    margin: 100px 20px 50px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
-.contact-me-image{
-    /* background-color: crimson; */
-    width: 15%;
-}
+/* .contact-me-image{
+    background-color: crimson;
+    width: 50%;
+
+} */
 .contact-me-image>img{
     /* background-color: hotpink; */
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    border-radius: 10px;
 }
 .contact-me-text{
-    margin: 20px;
-
+    flex: 1;
+    margin: 20px 120px;
 }
 .contact-me-heading{
     /* background-color: darkblue; */
@@ -188,7 +187,7 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;  
 }
-.contact-me-text> p{
+.contact-me-text>p{
     /* background-color: hotpink; */
     margin-top: 30px;
     margin-left: 30px;
@@ -197,6 +196,7 @@ main{
     font-weight: 500; 
 
 }
+
 .icons{
     /* background-color: darkgrey; */
     margin-left: 20px;
@@ -208,4 +208,57 @@ main{
 }
 .icons > a:hover{
     filter: drop-shadow(10px 5px 10px rgb(9, 15, 13));
+}
+.icons  a img{
+    margin: 30px;
+    
+}
+#Feedback{
+    margin: 100px 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.feedback-image>img{
+    height: 100%;
+    border-radius: 10px;
+    width: 100%;
+
+}
+.feedback-text{
+    flex: 1;
+    margin: 20px 60px;
+
+}
+.heading-Feedback{
+    margin-left: 30px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline; 
+}
+.feedback-text>p{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;   
+}
+.link{
+    
+    text-align: center;
+    margin: 40px;
+    
+}
+.feedback-form-link:hover{
+    box-shadow: 2px 2px 10px rgb(32, 208, 91);
+}
+.feedback-form-link{  
+    background-color: rgb(32, 208, 91);
+    text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
 }
